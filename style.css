@@ -1,0 +1,1618 @@
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  body */
+body{
+    background-color: #242424;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+}
+
+
+.youtube-for-load{
+    display: none;
+}
+#preloader{
+    background: #e5e5e5 url(images/preloader.gif) no-repeat center center;
+    opacity: 1;
+    background-size: 16%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+
+/* 
+    !scroll bar
+*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
+a{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 
+    ! first up navigatoin bar
+*/
+
+/* Navigation bar for home page */
+
+.navbar-home{
+    margin-bottom: -5px;
+    background-color:#1b1b1b ;
+    width: 100%;
+    color:rgb(242, 238, 238);
+    font-family: "Clarkson",Helvetica,sans-serif;
+    height: 80px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+}
+
+.navbar{
+    width: 100%;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    height: 80px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+}
+/* 
+    ! LOGO 
+*/
+
+.brand-logo{
+    padding-right: 20px ;
+    color:black;
+    font-size: 45px;
+}
+.brand-logo-home{
+    padding-right: 20px ;
+    color:rgb(242, 238, 238);
+    font-size: 45px;
+}
+.brand-logo:hover{
+    color: #000000;
+}
+
+/*
+  ! left navigation 
+*/
+.navbar-left-home{
+    font-size: 15px;
+    padding-left: 1%;
+    display: flex;
+    align-items: center ;
+    text-transform: uppercase;
+    align-items: left ;
+    font-weight: 500;
+}
+.navbar-left-home a{
+    color: white;
+}
+.navbar-left-home div{
+    padding-left: 34px;
+    transition: color .4s;;
+    font-weight: 700;
+}
+.navbar-left-home div:hover{
+    color:  #c4bebe;
+}
+
+.navbar-left{
+    font-size: 15px;
+    padding-left: 1%;
+    display: flex;
+    align-items: center ;
+    text-transform: uppercase;
+    align-items: left ;
+    font-weight: 500;
+    
+}
+.navbar-left div{
+    padding-left: 20px;
+    transition: color .4s;;
+    font-weight: 700;
+}
+.navbar-left div:hover{
+    color:  #555353;
+}
+
+/* 
+    !right navigation 
+*/
+
+.navbar-right{
+    padding-right:2% ;
+    align-items: center ;
+    display:flex;
+    text-decoration: solid;
+    align-items: top ;
+    text-transform: uppercase;
+    align-items: left ;
+    font-weight: 500;
+    font-size: 15px;
+    
+}
+#fonts{
+    margin-left: 20px;
+    padding-right: 20px;
+    font-size: 27px;
+    color:rgb(242, 238, 238);
+}
+#faws{
+    margin-left: 20px;
+    padding-right: 20px;
+    font-size: 27px;
+    color:black;
+}
+/* 
+    !profile and cart
+*/
+.fas{
+    font-size: 27px;
+}
+.navbar-left > * ,
+.navbar-right > *{
+    align-items: top;
+    margin: 10px;     
+}
+/* 
+    !sign up and login
+*/
+
+.sign-up-h ,
+.log-in-h{
+    align-items: flex;
+    border-radius: 2px;
+    border:1px solid rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+    transition:  .3s;
+}
+
+.log-in-h{
+    color: black;
+    background-color: rgb(242, 238, 238);
+}
+.sign-up-h{
+    color:rgb(242, 238, 238);
+    background-color: black;
+}
+.sign-up-h:hover{
+    color: #000000;
+    background-color:rgb(242, 238, 238);
+    box-shadow:  8px 6px #7b7b7d;
+}
+
+.log-in-h:hover{
+    color: #000000;
+    background-color:rgb(242, 238, 238);
+    box-shadow:8px 6px #7b7b7d;
+}
+
+/* Other pages Box */
+
+.sign-up ,
+.log-in{
+    align-items: flex;
+    border-radius: 2px;
+    border:2px solid rgb(0, 0, 0);
+    padding: 5px 20px 5px 20px;
+    transition:  .3s;
+}
+
+.log-in{
+    color: black;
+    background-color: rgb(242, 238, 238);
+}
+.sign-up{
+    color:rgb(242, 238, 238);
+    background-color: black;
+}
+.sign-up:hover{
+    color: #000000;
+    background-color:rgb(242, 238, 238);
+    box-shadow:  8px 6px#242323;
+}
+
+.log-in:hover{
+    color: #000000;
+    background-color:rgb(242, 238, 238);
+    box-shadow:8px 6px #242323;
+}
+.container-one{
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+
+/* 
+    !Home page first web containers  code bloks
+*/
+
+.web-container{
+    width: auto;
+    height: 800px;
+    justify-content: center;
+}
+.web-left{
+    width: 60%;
+}
+.web-right{
+    padding-top: 100px;
+}
+.web{
+    display: flex;
+}
+.web-title{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: 110px;
+    text-align:left;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+.web-title,
+.web-description{
+    font-style: normal;
+    text-transform:capitalize;
+    color: rgb(242, 238, 238);
+}
+.web-description{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    line-height: 1.8;
+    width: 70%;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(242, 238, 238);
+}
+.btns-home{
+    text-align: justify;
+}
+
+.btns{
+    text-align: center;
+}
+
+.web-button{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 20px;
+    border-radius: 2px;
+    border:1px solid rgb(255, 255, 255);
+    padding: 18px 25px 18px 25px;
+    color: black;
+    background-color: rgb(242, 238, 238);
+    transition: .4s;  
+    margin-bottom: 5%;
+}
+
+.web-button:hover{
+    cursor: pointer;
+    box-shadow: 13px 10px  #7b7b7d;
+    background-color:rgb(242, 238, 238);
+    color: #000000;
+}
+
+.lottie-file{
+    margin-left: 30%;
+}
+
+/* 
+    !second web container build your own website
+*/
+
+.web-second{
+    padding-top: 5%;
+    display:flex ;
+}
+
+.web-two{
+    font-weight:bold; ;
+    line-height: 1;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 150px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-transform:uppercase;
+    color: black;
+}
+.make-title{
+    padding-right: 350px;
+    text-align: right;
+
+}
+.own-title{
+    margin-right: 10%;
+    text-align: right;
+}
+.website-title{
+    margin-right:30%;
+    text-align: center;
+}
+
+/*
+    ! Website users
+*/
+.whoisit{
+    font-weight: 900;
+    display: flex;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.websites{
+    height: 650px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.goal{
+    background-color: white;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    width: 21%;
+    margin: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius:10px 10px ;
+    padding-top: 15px;
+    transition: .4s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.goal:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+.img-forweb{
+    height:100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.webs-des{
+    text-align: center;
+    color: #424243;
+    padding: 0 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.webs-title{
+    padding: 20px 10px ;
+    font-size: 22px;
+    text-align: center;
+    color: #292447;
+}
+.btn-user{
+    padding-bottom: 80px ;
+}
+.temp-button{
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 20px;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 12px 22px ;
+    color: white;
+    background-color: black;
+    margin-bottom:75px;
+    transition: .4s;
+}
+
+.temp-button:hover{
+    cursor: pointer;
+    box-shadow: 12px 9px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+}
+
+/* 
+    !Third web container STEPS
+*/
+
+.web-t{
+    background-color:#ffffff  ; 
+    width: auto;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.topic{
+    padding: 1px ;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: justify;
+    display: block;
+    width: 70%;
+}
+.topic th{
+    height: 180px;
+    width: 20%;
+    text-align: center;
+}
+
+.topic tr{
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.step{
+    font-size: 70px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-transform:uppercase;
+    color: black;
+}
+
+.title{
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    color: black;
+}
+.des{
+    line-height: 1.8;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    color: rgb(44, 44, 44);
+}
+.con{
+    display: flex;
+
+}
+/*  
+    ? Text over image  
+*/
+.text-image{
+    font-weight: 900;
+    display: flex;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 55px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+
+
+/* 
+    ! login page 
+*/
+.con-log{
+    padding-top: 4%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+/* 
+    ! SIGN UP 
+*/
+#account{
+    color:  #3366CC;
+    text-decoration: underline;
+}
+
+.verticalr{
+    border-left: 2px solid black  ;
+    height: 500px;
+}
+
+
+
+/* 
+    ! login page and signup page box
+*/
+.box{
+    border-radius:10px 100px  10px 100px;
+    height: auto;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box h1{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.box input[type = "password"]{
+    width: 170px;
+}
+.box input[type = "text"]{
+    width: 200px;
+}
+.box input[type = "email"]{
+    width: 240px;
+}
+
+/* 
+    ! input types edit 
+*/
+
+.box input[type = "text"],
+.box input[type = "email"],
+.box input[type = "password"]{
+    align-items: center;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 16px;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 14px 10px;
+    border-radius: 3px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    transition:  .3s;
+}
+.box input[type = "text"]:focus{
+    border: 2px solid  #3366CC;
+    width: 250px;
+    color: #000000;
+    border-radius: 10px;
+}
+.box input[type = "password"]:focus{
+    border: 2px solid  #3366CC;
+    width: 200px;
+    color: #000000;
+    border-radius: 10px;
+}
+.box input[type = "email"]:focus{
+    border: 2px solid  #3366CC;
+    width: 290px;
+    color: #000000;
+    border-radius: 10px;
+}
+.box input[type = "submit"]{
+    border:0;
+    background-color: black;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 8px 30px ;
+    box-shadow: 5px 4px 6px #a19f9f;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: .4s;;
+    cursor: pointer; 
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 23px;
+}
+.box input[type = "submit"]:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 8px #000000;
+}
+.not-mem{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 16px;
+}
+.option-label{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 17px;
+}
+.p-p{
+    color: #49494a;
+    font-size: 12px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 20px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+.sig-u:hover{
+    color:  #3366CC;
+}
+/* 
+    !   Free, premium plan in Home page
+*/
+.plans{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+.plan-left{
+    width: 100%;
+    background-color: white;
+}
+.plan-right{
+    width: 100%;
+    color: rgb(228, 228, 228);
+    background-color: #1b1b1b;
+}
+.btn-plan{
+    padding-top: 37px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.button-plan-right{
+    border: 1px solid black;
+    font-size: 16px;
+    color: #000000;
+    background-color: rgb(228, 228, 228);
+}
+.button-plan-left{
+    border: 1px solid black;
+    color: white;
+    background-color: #000000;
+    font-size: 16px;
+}
+.topic-plan{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.plan-des{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    padding-left: 30px;
+    padding-right: auto;
+    justify-content: center;
+    width: 90%;
+    font-size: 19px;
+}
+.plan-des p{
+    margin-left: 3%;
+    padding-top: 25px;
+}
+.plan-des hr{
+    margin-left: 5%;
+    margin-top: 20px;
+}
+#btn-font{
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.btn-left{
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 18px;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 12px 20px 12px 20px;
+    color: white;
+    background-color: black;
+    margin: auto;
+    transition: .4s;
+}
+
+.btn-right{
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 18px;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 12px 20px 12px 20px;
+    color: rgb(0, 0, 0);
+    background-color:  rgb(228, 228, 228);
+    transition: .4s;
+}
+.btn-left:hover{
+    cursor: pointer;
+    box-shadow: 10px 8px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+}
+.btn-right:hover{
+    cursor: pointer;
+    border: 1px solid rgb(228, 228, 228);;
+    box-shadow: 10px 8px   #888686;
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(228, 228, 228);
+}
+
+
+
+/* 
+    !   FAQ
+*/
+.faq{
+    padding-top: 80px;
+    font-size: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: center;
+}
+#accordion{
+    margin: 70px auto;
+    width: 1000px;
+    background-color: #eee;
+}
+#accordion li{
+    list-style:none ;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+#accordion li label h2{
+    font-size: 19px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;  
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+}
+#accordion .content{
+    padding: 0 10px;
+    line-height: 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition:.4s;;
+}
+.content{
+    font-size: 17px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: justify;
+    color: rgb(44, 44, 44);
+}
+#accordion hr{
+    width: 920px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+    ! footer of website
+*/
+.footer{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 40px 0;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-weight: 400;
+    background-color: rgb(246, 246, 246);
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    bottom: 100;
+    width: 100%;
+}
+/* socila media */
+.footer .social{
+    padding-top: 20px;
+    font-size: 25px;
+    letter-spacing: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(36, 36,  36);
+}
+
+.footer ul{
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/* copyright */
+.footer .copyright{
+    color: black;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+/* 
+    ! Template page products
+*/
+
+.temp{   
+    height: 330px;
+    padding-top: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+.template-des{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    color: #3f3f3f;
+    line-height: 45px;
+    font-size:21px ;
+}
+.template-top{
+    width: auto;
+    padding-top: 25px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+.b{
+    background-color:rgb(246, 246, 246) ;
+}
+.paw{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10%;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.radio{
+    padding-top: 5%;
+    height: 100%;
+    border-radius: 2px ;
+}
+.input-button{
+    display:none ;
+}
+
+.label-button{
+    margin-left:5%;
+    margin-top:auto;
+    margin-bottom: auto;
+    height: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 2px ;
+    padding: 6px 70px ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border .001s;
+}
+.input-button:checked + .label-button{
+    box-shadow: 8px 8px   #242425;
+    background-color:rgb(220, 217, 217) ;
+    color: #000000;
+}
+.label-button:hover{
+    background-color:rgb(235, 235, 235) ;
+}
+
+/*  products */
+.h3-con{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+} 
+.constent{
+    background-color: white;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    width: 30%;
+    margin: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius:20px 20px ;
+    padding-top: 15px;
+    transition: .4s;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.constent:hover{
+    box-shadow: 0px 6px 10px  rgb(36, 46, 68);
+}
+
+
+.gallery-free,
+.gallery{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*image*/
+.product{
+    height:100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.pro{
+    text-align: center;
+    color: #424243;
+    padding-top: 15px;
+}
+.constent h6{
+    font-size: 26px;
+    text-align: center;
+    color: #292447;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.btn{
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .4s;
+}
+
+.btn:hover{
+    background-color:rgb(0, 0, 0,0.9) ;
+}
+
+
+/*
+    !Cart
+*/
+.temparary{   
+    height: 100px;
+    padding-top: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.table{
+    width: 80%;
+    margin: 100px 0;
+    border-color: #e5e5e5;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table .lists{
+    color: #3f3f3f;
+}
+.table tr{
+    font-size: 16px;
+    height: 50px;
+}
+.table td{
+    width: 200px;
+}
+.btnOrder{
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 5px 8px ;
+    color: white;
+    background-color: black;
+    margin: auto;
+    transition: .4s;
+}
+
+.btnOrder:hover{
+    box-shadow: 10px 8px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+}
+
+.tblPurchase{
+    width: 95%;
+    margin: 100px 0;
+    border-color: #e5e5e5;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.products-page{
+    margin: 2% 12% 0 12% ;
+}
+.pr-leftimg img{
+    width: 100%;
+}
+.swiper{
+    width: 70%;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev{
+    color: #5d5c5c;
+}
+.pr-right{
+    height: max-content;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.pr-right hr{
+    margin-top: 1%;
+    width: 20%;
+    border: 2px solid black;
+}
+.pr-title{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+.pr-pr-des{
+    margin-bottom: 15px;
+    margin-top: 70px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.pr-des{
+    width: 80%;
+    margin: 20px 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #343131;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+
+.pr-price{
+    margin: 35px 0;
+    font-size: 37px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+
+.add-to{
+    margin: 3% auto;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 20px;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 10px 150px ;
+    color: white;
+    background-color: black;
+    transition: .4s;
+}
+
+.add-to:hover{
+    cursor: pointer;
+    box-shadow: 13px 10px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+}
+
+
+
+.descript{
+    padding-top: 3%;
+    padding-left: 20%;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+.lab-top{
+    padding: 2% 0;
+}
+
+.unorder li{
+    color: #343131;
+    padding: 1% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    ! Pricing page 
+*/
+.price{
+    height: 400px;
+    padding-top: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.price-top{
+    padding-top: 25px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+.price-des{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #3f3f3f;
+    padding-top: 10px;
+    line-height: 45px;
+    font-size:21px ;
+}
+.price-button{
+    width: fit-content;
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 20px;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 12px 22px ;
+    color: white;
+    background-color: black;
+    margin: auto;
+    transition: .4s;
+}
+
+.price-button:hover{
+    cursor: pointer;
+    box-shadow: 12px 9px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+  
+}
+/*
+    ! Table for price
+*/
+#fawesome{
+    font-size: 18px;
+}
+
+.table-price{
+    padding-top: 50px;
+    height: 900px;
+}
+
+.price-table{
+    width: 70%;
+    padding-top: 30px;
+    border-color: #e5e5e5;
+    border-collapse: collapse;
+    padding-top: 50px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price-table tr{
+    font-size: 16px;
+    height: 70px;
+    transition: .4s;
+}
+.price-table td{
+    width: 200px;
+}
+table .tabled1,
+table .tabled2{
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+}
+table .tabled1{
+    padding-left: 10px;
+    font-size: 17px;
+    width: 300px;
+    text-align: justify;
+}
+table .tabled2 .priceof-plan{
+    line-height: 30px;
+    font-size: 35px;
+}
+table .tabled2{
+    height: 150px;
+}
+table .tabled2 .price-descrip{
+    font-size: 15px;
+}
+
+table .tabled2:hover{
+    cursor: pointer;
+    background-color: hwb(0 93% 7%);
+}
+
+
+/*
+    ! Contact Page
+*/
+.contact{
+    height: 470px;
+    background-color:rgb(241, 243, 245) ;
+}
+.contactT{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 28px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+}
+
+.contact-des{
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+}
+.contact-one,
+.contact-two,
+.contact-three{
+    width: 280px;
+    font-size: 20px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    display:grid;
+    line-height: 30px;
+    color: #3f3f3f;
+}
+#font{
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+.Cbtn{
+    max-width: max-content;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 2px;
+    border:1px solid black;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: black;
+    margin: auto;
+    transition: .4s;;
+}
+
+.Cbtn:hover{
+    box-shadow: 10px 8px   #242425;
+    background-color:rgb(255, 255, 255) ;
+    color: #000000;
+}
+
+/*
+    !2nd  Contact Page
+*/
+.second-contact{
+    height: 460px;
+}
+.mapouter{
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*
+    ! Privacy Policy
+   ?-----------------?
+*/
+
+.privacy{
+    width: 70%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+.privacy-topic{
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.privacy-q{
+    padding-bottom: 20px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 25px;
+}
+
+.privacy-d{
+    font-size: 15px;
+    color: #5f5f5f;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+/*
+    ! Profile Page
+*/
+
+.profile{
+    display: flex;
+    justify-content: left;
+}
+.profile-top{
+    margin-bottom: 50px;
+    padding-top: 22px;
+    align-items: center;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    text-align: justify;
+    font-size: 25px;
+}
+.left-profile{
+    padding: 60px 0px 0px 50px;
+    height: 700px;
+    background-color: #e5e5e5;
+    width: 450px;
+    margin-left: 50px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    line-height: 50px;
+}
+.image-profile{
+    border-radius: 100px;
+    border: 2px solid #757c84;
+    padding: auto;
+}
+.details{
+    font-size: 22px;
+    font-weight: bold;
+}
+.direct-link button{
+    border: 0;
+    text-align: center;
+    padding: 3px 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#profile-name{
+    font-size: 16px;
+}
+.right-profile{
+    width: 100%;
+    align-items: center;
+    font-family: "Clarkson",Helvetica,sans-serif;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.my-profile,
+.purchase-history,
+.order-track,
+.edit-page{
+    padding-top: 50px;
+    padding-left:50px ;
+}
+.edits{
+    font-size: 19px;
+    display: contents;
+    line-height: 50px;
+}
+#des-for-profile{
+    font-size:17px;
+    color: rgb(44, 44, 44);;
+}
+.edit-sub input[type = "submit"]{
+    background-color: black;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 3px 6px;
+    color: rgb(255, 255, 255);
+    border-radius: 1px;
+    transition: .3s;
+    font-size: 15px;
+    cursor: pointer; 
+}
+.sub input[type = "submit"]{
+    background-color: black;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 3px 6px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: .3s;
+    cursor: pointer; 
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 18px;
+}
+.sub input[type = "submit"]:hover,
+.edit-sub input[type = "submit"]:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 5px #000000;
+}
+
+.edit-view input[type = "button"],
+.edit-after input[type = "button"]{
+    background-color: black;
+    margin: 10px 15px;
+    text-align: center;
+    border: 2px solid #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: .3s;
+    cursor: pointer; 
+    font-family: "Clarkson",Helvetica,sans-serif;
+    font-size: 13px;
+}
+.edit-view input[type = "button"]:hover,
+.edit-after input[type = "button"]:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+/*      ? Media query for nvigation bar   
+*/
+label #bar-btn{
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*
+    ! Responsive Queries
+*/
+
+@media (max-width:1000px){
+    
+    .navbar-home{
+        padding: auto;
+        width: 100%;
+    }
+    .web-two{
+        font-size: 100px;
+    }
+    .make-title{
+        padding-right: 50px;
+    }
+    #accordion hr{
+        width: auto;
+        padding-right: 2%;
+    }
+    #accordion{
+        width: auto;
+    }
+    .web-left{
+        height: 60%;
+        width: 60%;
+    }
+    .web-container{
+        height: 700px;
+    }
+    .web-title{
+        padding-top: 10%;
+        font-size: 80px;
+    }
+    .web-description{
+        padding-left: 10%;
+        font-size: 18px;
+    }
+    .btns{
+        padding-left: 10%;
+    }
+    .web{
+        display: block;
+    }
+    .step{
+        font-size: 45px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .des{
+        font-size: 18px;
+    }
+    .topic{
+        margin-left: 2%;
+    }
+    .w-right{
+        padding-right: 2%;
+    }
+    .lg-right{
+        padding-right: 50%;
+        padding-bottom: 400px;
+        height:200px;
+        width: 200px;
+    }
+    .websites{
+        height: 1050px;
+    }
+    .goal{
+        width: 40%;
+    }
+    .price-des{
+        width: 100%;
+    }
+}
+@media (max-width:1411px){
+    .constent{
+        width: 28%;
+    }
+}
+@media (max-width:1300px){
+
+    .make-title{
+        padding-right: 50px;
+    }
+    .constent{
+        width: 45%;
+    }
+}
+@media (max-width:1100px){
+    .template-des{
+        width: 100%;
+    }
+}
